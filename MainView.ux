@@ -1,0 +1,51 @@
+<App>
+	<ScrollView>
+	<StackPanel>
+		<StackPanel ux:Name="sp1">
+			<Basic.TextInput Value="ti1-1" Background="#0f0" />
+			<Basic.TextInput Value="ti1-2" Background="#0f0" />
+		</StackPanel>
+		<StackPanel ux:Name="sp2">
+			<Basic.TextInput Value="ti2-1" />
+			<Basic.TextInput Value="ti2-2" />
+		</StackPanel>
+		<StackPanel ux:Name="sp3">
+			<Basic.TextInput Value="ti3-1" />
+			<Basic.TextInput Value="ti3-2" />
+		</StackPanel>
+		<StackPanel ux:Name="sp4">
+			<Basic.TextInput Value="ti4-1" />
+			<Basic.TextInput Value="ti4-2" />
+		</StackPanel>
+		<StackPanel ux:Name="sp5">
+			<Basic.TextInput Value="ti5-1" />
+			<Basic.TextInput Value="ti5-2" />
+		</StackPanel>
+		<Basic.Button Text="Focus 1">
+			<Clicked>
+				<GiveFocusChild Target="sp1" />
+			</Clicked>
+		</Basic.Button>
+		<Basic.Button Text="Focus 2">
+			<Clicked>
+				<GiveFocusChild Target="sp2" />
+			</Clicked>
+		</Basic.Button>
+		<Basic.Button Text="Focus 3">
+			<Clicked>
+				<GiveFocusChild Target="sp3" />
+			</Clicked>
+		</Basic.Button>
+		<Basic.Button Text="Focus 4">
+			<Clicked>
+				<GiveFocusChild Target="sp4" />
+			</Clicked>
+		</Basic.Button>
+		<Basic.Button Text="Focus 5">
+			<Clicked>
+				<GiveFocusChild Target="sp5" />
+			</Clicked>
+		</Basic.Button>
+	</StackPanel>
+	</ScrollView>
+</App>
